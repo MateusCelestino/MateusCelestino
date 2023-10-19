@@ -2,10 +2,10 @@
 
 ....
 
-💼 - Hoje trabalho com front-end
-💻 - Estudando c#
-🚻 - Pronouns he/him
-🧏‍♂️ - Surdo
+## 💼 - Hoje trabalho com front-end
+## 💻 - Estudando c#
+## 🚻 - Pronouns he/him
+## 🧏‍♂️ - Surdo
 
 <div> 
   <a href="https://www.youtube.com/channel/UCEFkVz89bv78bxLkBhgqqUQ" target="_blank"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" target="_blank"></a>
