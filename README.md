@@ -1,8 +1,4 @@
 # Olá! Eu sou o Mateus Celestino
-
-....
-
-
 - 💼 - Hoje trabalho com front-end
 - 💻 - Estudando c#
 - 🚻 - Pronouns he/him
