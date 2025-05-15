@@ -5,19 +5,38 @@
     <title>Perfil Profissional</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+    
 </head>
 <body>
+    <div class="mode-switch">
+        <button id="lightBtn" class="mode-btn" aria-label="Modo claro">
+            <i class="fas fa-sun"></i> Claro
+        </button>
+        <button id="darkBtn" class="mode-btn" aria-label="Modo escuro">
+            <i class="fas fa-moon"></i> Escuro
+        </button>
+        <button id="ptBtn" class="lang-btn" aria-label="Português">
+            <i class="fas fa-flag"></i> Português
+        </button>
+        <button id="enBtn" class="lang-btn" aria-label="English">
+            <i class="fas fa-globe"></i> English
+        </button>
+    </div>
     <div class="profile-container">
         <img src="img/Mateus.jpeg" alt="Foto do Perfil" class="profile-photo">
         <div class="profile-name">Mateus Celestino Delleteze</div>
          <span class="profile-icons">
                 <i class="fas fa-deaf"></i> Surdo &nbsp;|&nbsp; <i class="fas fa-sign-language"></i> Comunicação por Libras
             </span>
+            
         
         <div class="profile-location">
             <i class="fas fa-map-marker-alt"></i> Araçatuba, SP
             
         </div>
+        <a href="https://www.linkedin.com/in/mateus-celestino-delleteze-pcd-200aa31b5/" class="linkedin-btn" target="_blank">
+            <i class="fab fa-linkedin"></i> Ver LinkedIn
+        </a>
         
         <div class="profile-info">
             <strong>Sobre mim</strong><br>
@@ -28,10 +47,11 @@
             Busco unir minha bagagem técnica com um olhar cuidadoso para a experiência do usuário e a acessibilidade, contribuindo para um ambiente digital mais justo e funcional.<br><br>
            
         </div>
-        <a href="https://www.linkedin.com/in/mateus-celestino-delleteze-pcd-200aa31b5/" class="linkedin-btn" target="_blank">
-            <i class="fab fa-linkedin"></i> Ver LinkedIn
-        </a>
-        <div class="profile-tags">
+        
+        <div>
+            <strong>Minhas principais habilidades são</strong>
+            <div class="profile-tags">
+            
             <span class="profile-tag">Banco de Dados</span>
             <span class="profile-tag">PHP</span>
             <span class="profile-tag">WordPress</span>
@@ -39,6 +59,8 @@
             <span class="profile-tag">CSS</span>
             <span class="profile-tag">Acessibilidade & UX</span>
         </div>
+        </div>
+        
         <div class="profile-education">
             <strong>Formação:</strong>
             <ul>
@@ -74,27 +96,7 @@
             </div>
         </div>
         </div>
-    </body>
-    <script>
-        document.querySelectorAll('.filter-btn').forEach(btn => {
-        btn.addEventListener('click', function() {
-            const filter = this.getAttribute('data-filter');
-            document.querySelectorAll('.work-card').forEach(card => {
-            if (filter === 'all' || card.classList.contains(filter)) {
-                card.style.display = '';
-            } else {
-                card.style.display = 'none';
-            }
-            });
-        });
-        });
-             document.querySelectorAll('.filter-btn').forEach(btn => {
-                btn.addEventListener('mouseover', function() {
-                    this.style.background = '#4158F0';
-                });
-                btn.addEventListener('mouseout', function() {
-                    this.style.background = '#41C7F0';
-                });
-            });
-    </script>
+    <script src="js/js.js"></script>
+
+</body>
 </html>

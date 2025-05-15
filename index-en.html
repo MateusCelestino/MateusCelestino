@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Professional Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <div class="mode-switch">
+        <button id="lightBtn" class="mode-btn" aria-label="Light mode">
+            <i class="fas fa-sun"></i> Light
+        </button>
+        <button id="darkBtn" class="mode-btn" aria-label="Dark mode">
+            <i class="fas fa-moon"></i> Dark
+        </button>
+        <button id="ptBtn" class="lang-btn" aria-label="Português">
+            <i class="fas fa-flag"></i> Portuguese
+        </button>
+        <button id="enBtn" class="lang-btn" aria-label="English">
+            <i class="fas fa-globe"></i> English
+        </button>
+    </div>
+    <div class="profile-container">
+        <img src="img/Mateus.jpeg" alt="Foto do Perfil" class="profile-photo">
+        <div class="profile-name">Mateus Celestino Delleteze</div>
+         <span class="profile-icons">
+                <i class="fas fa-deaf"></i> Deaf &nbsp;|&nbsp; <i class="fas fa-sign-language"></i> Sign Language
+            </span>
+            
+        
+        <div class="profile-location">
+            <i class="fas fa-map-marker-alt"></i> Araçatuba, SP
+            
+        </div>
+        <a href="https://www.linkedin.com/in/mateus-celestino-delleteze-pcd-200aa31b5/" class="linkedin-btn" target="_blank">
+            <i class="fab fa-linkedin"></i> View LinkedIn
+        </a>
+        
+        <div class="profile-info">
+            <strong>About Me</strong><br>
+            I am passionate about technology, with a special interest in <b>UX</b> (User Experience), digital accessibility, and web development.<br>
+            I currently work in UX, focusing on making digital products more accessible and inclusive.<br><br>
+            <strong>Accessibility is more than just a field of work, it's a life purpose.</strong> As a deaf person fluent in Sign Language, I understand the importance of creating truly inclusive digital experiences.<br><br>
+            <strong>Experience with:</strong> PHP (my favorite language), HTML, CSS, Databases, and WordPress (especially in e-commerce and theme customization).<br><br>
+            I seek to combine my technical background with a careful eye for user experience and accessibility, contributing to a fairer and more functional digital environment.<br><br>
+
+        </div>
+        
+        <div>
+            <strong>My main skills are</strong>
+            <div class="profile-tags">
+
+            <span class="profile-tag">Databases</span>
+            <span class="profile-tag">PHP</span>
+            <span class="profile-tag">WordPress</span>
+            <span class="profile-tag">HTML</span>
+            <span class="profile-tag">CSS</span>
+            <span class="profile-tag">Accessibility & UX</span>
+        </div>
+        </div>
+        
+        <div class="profile-education">
+            <strong>Education:</strong>
+            <ul>
+            <li>Technical Course in Internet Computing (SENAC)</li>
+            <li>Free Course Back-end (SENAC)</li>
+            <li>Free Course WordPress Virtual Stores for Small Businesses - Strategies and Tools (SENAC)</li>
+            <li>Intensive Online Course in UX Design (MERGO)</li>
+            </ul>
+        </div>
+
+
+        <div class="profile-works">
+
+            <strong>Recent Professional Work:</strong>
+            <div style="text-align:center; margin: 18px 0;">
+                <span style="font-size:1.1em; color:#41C7F0; font-weight:600; letter-spacing:0.5px;">
+                    <i class="fas fa-filter" aria-hidden="true"></i> Filter projects by area
+                </span>
+            </div></span>
+            <div class="project-filters" style="margin: 20px 0; text-align:center;"></div>
+            <button class="filter-btn" data-filter="all" style="background:#41C7F0;color:#fff;border:none;padding:6px 12px;margin:0 2px;border-radius:5px;cursor:pointer;transition:background 0.2s,box-shadow 0.2s;box-shadow:0 2px 8px rgba(65,199,240,0.12);font-weight:600;font-size:0.95em;">All</button>
+            <button class="filter-btn" data-filter="ux" style="background:#41C7F0;color:#fff;border:none;padding:6px 12px;margin:0 2px;border-radius:5px;cursor:pointer;transition:background 0.2s,box-shadow 0.2s;box-shadow:0 2px 8px rgba(65,199,240,0.12);font-weight:600;font-size:0.95em;">UX</button>
+            <button class="filter-btn" data-filter="accessibility" style="background:#41C7F0;color:#fff;border:none;padding:6px 12px;margin:0 2px;border-radius:5px;cursor:pointer;transition:background 0.2s,box-shadow 0.2s;box-shadow:0 2px 8px rgba(65,199,240,0.12);font-weight:600;font-size:0.95em;">Accessibility</button>
+            <button class="filter-btn" data-filter="programmer" style="background:#41C7F0;color:#fff;border:none;padding:6px 12px;margin:0 2px;border-radius:5px;cursor:pointer;transition:background 0.2s,box-shadow 0.2s;box-shadow:0 2px 8px rgba(65,199,240,0.12);font-weight:600;font-size:0.95em;">Programmer</button>
+            </div>
+            <div class="work-card ux all accessibility">
+            <a href="https://dl.acm.org/doi/10.1145/3630970.3631081" target="_blank" style="text-decoration:none;color:inherit;">
+                <img src="img/slk+projeto.png" alt="UX Research on Assistive Technology" style="width:100%;max-width:320px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.08);margin-bottom:10px;">
+                <div style="font-weight:600;font-size:1.1em;margin-bottom:4px;">UX Research in Assistive Technology</div>
+                <div style="font-size:0.97em;color:#444;">Research in UX focused on assistive technologies, published in the ACM Digital Library.</div>
+            </a>
+            </div>
+        </div>
+        </div>
+    <script src="js/js.js"></script>
+  
+</body>
+</html>

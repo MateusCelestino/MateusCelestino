@@ -169,6 +169,17 @@
                 font-size: 0.95em;
                 margin-top: 12px;
             }
+             .mode-switch {
+                flex-wrap: wrap;
+                gap: 10px;
+                justify-content: center;
+                margin: 16px auto 0 auto;
+                padding: 0 2px;
+            }
+            .mode-btn, .lang-btn {
+                padding: 9px 12px;
+                font-size: 0.98em;
+            }
         }
 
 .project-filters {
@@ -198,15 +209,134 @@
     background: #4158F0;
     outline: none;
 }
-
-@media (max-width: 600px) {
-    .project-filters {
-        flex-direction: column;
-        gap: 8px;
-        align-items: center;
-    }
-    .filter-btn {
-        width: 90vw;
-        max-width: 320px;
-    }
-}
+  body.light-mode {
+            background: linear-gradient(135deg, #e0e7ff 0%, #f4f4f4 100%);
+            color: #22223b;
+        }
+        body.dark-mode {
+            background: linear-gradient(135deg, #232946 0%, #16161a 100%);
+            color: #eaeaea;
+        }
+        .dark-mode .profile-container {
+            background: #232946;
+            box-shadow: 0 8px 32px rgba(35,41,70,0.45);
+        }
+        .dark-mode .profile-name,
+        .dark-mode .profile-location,
+        .dark-mode .profile-info,
+        .dark-mode .profile-education,
+        .dark-mode .profile-education li,
+        .dark-mode .profile-badge,
+        .dark-mode .profile-tag,
+        .dark-mode .profile-icons,
+        .dark-mode .profile-works,
+        .dark-mode .work-card,
+        .dark-mode .linkedin-btn {
+            color: #eaeaea !important;
+        }
+        .dark-mode .profile-badge {
+            background: linear-gradient(90deg, #6366f1 60%, #41C7F0 100%);
+        }
+        .dark-mode .profile-tag {
+            background: #35377a;
+            color: #a5b4fc !important;
+        }
+        .dark-mode .work-card {
+            background: #1a1a2e;
+            box-shadow: 0 2px 8px rgba(65,199,240,0.13);
+        }
+        .dark-mode .linkedin-btn {
+            background: linear-gradient(90deg, #0077b5 60%, #6366f1 100%);
+            color: #fff !important;
+        }
+        .dark-mode .linkedin-btn:hover {
+            background: linear-gradient(90deg, #005983 60%, #6366f1 100%);
+        }
+        .dark-mode .filter-btn {
+            background: #35377a !important;
+            color: #eaeaea !important;
+        }
+        .dark-mode .filter-btn:hover,
+        .dark-mode .filter-btn:focus {
+            background: #6366f1 !important;
+            color: #fff !important;
+        }
+        .dark-mode .work-card img {
+            box-shadow: 0 2px 8px rgba(65,199,240,0.13);
+        }
+        .mode-switch {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            justify-content: center;
+            max-width: 600px;
+            margin: 24px auto 0 auto;
+            padding: 0 8px;
+        }
+        .mode-btn, .lang-btn, #lightBtn, #darkBtn {
+            background: linear-gradient(90deg, #fbbf24 60%, #fde68a 100%);
+            color: #22223b;
+            border: none;
+            padding: 10px 22px;
+            border-radius: 10px;
+            font-size: 1.05em;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(251,191,36,0.10);
+            transition: background 0.2s, color 0.2s, transform 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            letter-spacing: 0.2px;
+        }
+        .mode-btn:last-child,
+        .lang-btn:last-child {
+            background: linear-gradient(90deg, #6366f1 60%, #232946 100%);
+            color: #fff;
+            box-shadow: 0 2px 8px rgba(99,102,241,0.10);
+        }
+        .mode-btn:focus, .mode-btn:hover,
+        .lang-btn:focus, .lang-btn:hover {
+            outline: none;
+            transform: translateY(-2px) scale(1.05);
+            filter: brightness(1.10);
+        }      
+        
+        body.dark-mode .mode-switch {
+            /* Fundo escuro para o switch no dark mode */
+            background: transparent;
+        }
+        body.dark-mode .mode-btn, 
+        body.dark-mode .lang-btn,
+        body.dark-mode #lightBtn,
+        body.dark-mode #darkBtn {
+            background: linear-gradient(90deg, #232946 60%, #6366f1 100%);
+            color: #fff;
+            box-shadow: 0 2px 8px rgba(99,102,241,0.13);
+        }
+        body.dark-mode .mode-btn:last-child,
+        body.dark-mode .lang-btn:last-child {
+            background: linear-gradient(90deg, #6366f1 60%, #232946 100%);
+            color: #fff;
+        }
+        /* Botão "Escuro" e "English" com cor diferente */
+        #darkBtn, #enBtn {
+            background: linear-gradient(90deg, #6366f1 60%, #232946 100%);
+            color: #fff;
+            box-shadow: 0 2px 8px rgba(99,102,241,0.10);
+        }
+        /* Botão "Escuro" e "English" no dark mode */
+        body.dark-mode #darkBtn, 
+        body.dark-mode #enBtn {
+            background: linear-gradient(90deg, #6366f1 60%, #232946 100%);
+            color: #fff;
+        }
+        /* Dark mode: todos os botões iguais */
+        body.dark-mode .mode-btn, 
+        body.dark-mode .lang-btn,
+        body.dark-mode #darkBtn, 
+        body.dark-mode #enBtn {
+            background: linear-gradient(90deg, #232946 60%, #6366f1 100%);
+            color: #fff;
+            box-shadow: 0 2px 8px rgba(99,102,241,0.13);
+        }
