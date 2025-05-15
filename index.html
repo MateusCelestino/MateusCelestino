@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Perfil Profissional</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="profile-container">
+        <img src="img/Mateus.jpeg" alt="Foto do Perfil" class="profile-photo">
+        <div class="profile-name">Mateus Celestino Delleteze</div>
+        <div class="profile-location">
+            <i class="fas fa-map-marker-alt"></i> Araçatuba, SP
+        </div>
+        <div class="profile-info">
+            <strong>Sobre mim</strong><br>
+            Sou apaixonado por tecnologia, com especial interesse em <b>UX</b> (Experiência do Usuário), acessibilidade digital e desenvolvimento web.<br>
+            Atualmente atuo em UX, focando em tornar produtos digitais mais acessíveis e inclusivos.<br><br>
+            <strong>Acessibilidade é mais que uma área de atuação, é um propósito de vida.</strong> Como pessoa surda e fluente em Libras, compreendo na prática a importância de criar experiências digitais verdadeiramente inclusivas.<br><br>
+            <strong>Experiência com:</strong> PHP (minha linguagem favorita), HTML, CSS, Banco de Dados e WordPress (especialmente em lojas virtuais e personalização de temas).<br><br>
+            Busco unir minha bagagem técnica com um olhar cuidadoso para a experiência do usuário e a acessibilidade, contribuindo para um ambiente digital mais justo e funcional.<br><br>
+            <span class="profile-icons">
+                <i class="fas fa-deaf"></i> Surdo &nbsp;|&nbsp; <i class="fas fa-sign-language"></i> Comunicação por Libras
+            </span>
+        </div>
+        <a href="https://www.linkedin.com/in/mateus-celestino-delleteze-pcd-200aa31b5/" class="linkedin-btn" target="_blank">
+            <i class="fab fa-linkedin"></i> Ver LinkedIn
+        </a>
+        <div class="profile-tags">
+            <span class="profile-tag">Banco de Dados</span>
+            <span class="profile-tag">PHP</span>
+            <span class="profile-tag">WordPress</span>
+            <span class="profile-tag">HTML</span>
+            <span class="profile-tag">CSS</span>
+            <span class="profile-tag">Acessibilidade & UX</span>
+        </div>
+        <div class="profile-education">
+            <strong>Formação:</strong>
+            <ul>
+            <li>Técnico em Informática para Internet (SENAC)</li>
+            <li>Curso Livre Back-end (SENAC)</li>
+            <li>Curso Livre WordPress Lojas Virtuais para Pequenos Negócios - Estratégias e Ferramentas (SENAC)</li>
+            <li>Curso Online Intensivo em UX Design (MERGO)</li>
+            </ul>
+        </div>
+        <div class="project-filters" style="margin: 20px 0; text-align:center;">
+            <button class="filter-btn" data-filter="all" style="background:#41C7F0;color:#fff;border:none;padding:10px 18px;margin:0 4px;border-radius:6px;cursor:pointer;transition:background 0.2s,box-shadow 0.2s;box-shadow:0 2px 8px rgba(65,199,240,0.12);font-weight:600;font-size:1em;">Todos</button>
+            <button class="filter-btn" data-filter="ux" style="background:#41C7F0;color:#fff;border:none;padding:10px 18px;margin:0 4px;border-radius:6px;cursor:pointer;transition:background 0.2s,box-shadow 0.2s;box-shadow:0 2px 8px rgba(65,199,240,0.12);font-weight:600;font-size:1em;">UX</button>
+            <button class="filter-btn" data-filter="acessibilidade" style="background:#41C7F0;color:#fff;border:none;padding:10px 18px;margin:0 4px;border-radius:6px;cursor:pointer;transition:background 0.2s,box-shadow 0.2s;box-shadow:0 2px 8px rgba(65,199,240,0.12);font-weight:600;font-size:1em;">Acessibilidade</button>
+            <button class="filter-btn" data-filter="programador" style="background:#41C7F0;color:#fff;border:none;padding:10px 18px;margin:0 4px;border-radius:6px;cursor:pointer;transition:background 0.2s,box-shadow 0.2s;box-shadow:0 2px 8px rgba(65,199,240,0.12);font-weight:600;font-size:1em;">Programador</button>
+        </div>
+       
+       
+        <div class="profile-works">
+            <strong>Trabalhos Profissionais Recentes:</strong>
+            <div class="work-card ux all acessibilidade">
+            <a href="https://dl.acm.org/doi/10.1145/3630970.3631081" target="_blank" style="text-decoration:none;color:inherit;">
+                <img src="img/slk+projeto.png" alt="UX Research on Assistive Technology" style="width:100%;max-width:320px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.08);margin-bottom:10px;">
+                <div style="font-weight:600;font-size:1.1em;margin-bottom:4px;">Pesquisa UX em Tecnologia Assistiva</div>
+                <div style="font-size:0.97em;color:#444;">Pesquisa em UX voltada para tecnologias assistivas, publicada na ACM Digital Library.</div>
+            </a>
+            </div>
+        </div>
+        </div>
+    </body>
+    <script>
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const filter = this.getAttribute('data-filter');
+            document.querySelectorAll('.work-card').forEach(card => {
+            if (filter === 'all' || card.classList.contains(filter)) {
+                card.style.display = '';
+            } else {
+                card.style.display = 'none';
+            }
+            });
+        });
+        });
+             document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.addEventListener('mouseover', function() {
+                    this.style.background = '#4158F0';
+                });
+                btn.addEventListener('mouseout', function() {
+                    this.style.background = '#41C7F0';
+                });
+            });
+    </script>
+</html>
