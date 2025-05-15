@@ -340,3 +340,56 @@
             color: #fff;
             box-shadow: 0 2px 8px rgba(99,102,241,0.13);
         }
+
+/* Centraliza os botões do modo e idioma */
+.mode-switch {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    justify-content: center;
+    max-width: 600px;
+    margin: 24px auto 0 auto;
+    padding: 0 8px;
+}
+
+/* Todos os botões de modo e idioma com a mesma cor no light mode */
+.mode-btn, .lang-btn, #lightBtn, #darkBtn, #ptBtn, #enBtn {
+    background: linear-gradient(90deg, #fbbf24 60%, #fde68a 100%);
+    color: #22223b;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 10px;
+    font-size: 1.05em;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(251,191,36,0.10);
+    transition: background 0.2s, color 0.2s, transform 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    letter-spacing: 0.2px;
+}
+
+/* Hover e foco */
+.mode-btn:focus, .mode-btn:hover,
+.lang-btn:focus, .lang-btn:hover,
+#lightBtn:focus, #lightBtn:hover,
+#darkBtn:focus, #darkBtn:hover,
+#ptBtn:focus, #ptBtn:hover,
+#enBtn:focus, #enBtn:hover {
+    outline: none;
+    transform: translateY(-2px) scale(1.05);
+    filter: brightness(1.10);
+}
+
+/* Dark mode: todos os botões iguais */
+body.dark-mode .mode-btn,
+body.dark-mode .lang-btn,
+body.dark-mode #lightBtn,
+body.dark-mode #darkBtn,
+body.dark-mode #ptBtn,
+body.dark-mode #enBtn {
+    background: linear-gradient(90deg, #232946 60%, #6366f1 100%);
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(99,102,241,0.13);
+}
